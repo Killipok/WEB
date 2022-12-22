@@ -1,16 +1,16 @@
-# Sample Dockerfile
+# Firefox over VNC
+#
+# VERSION               0.3
 
-# Indicates that the windowsservercore image will be used as the base image.
-FROM mcr.microsoft.com/windows/servercore:ltsc2019
+FROM ubuntu
 
-# Metadata indicating an image maintainer.
-LABEL maintainer="jshelton@contoso.com"
+# Install vnc, xvfb in order to create a 'fake' display and firefox
+RUN apt-get update && apt-get install -y x11vnc xvfb firefox
+RUN mkdir ~/.vnc
+# Setup a password
+RUN x11vnc -storepasswd 1234 ~/.vnc/passwd
+# Autostart firefox (might not be the best way, but it does the trick)
+RUN bash -c 'echo "firefox" >> /.bashrc'
 
-# Uses dism.exe to install the IIS role.
-RUN dism.exe /online /enable-feature /all /featurename:iis-webserver /NoRestart
-
-# Creates an HTML file and adds content to this file.
-RUN echo "Hello World - Dockerfile" > c:\inetpub\wwwroot\index.html
-
-# Sets a command or process that will run each time a container is run from the new image.
-CMD [ "cmd" ]
+EXPOSE 5900
+CMD    ["x11vnc", "-forever", "-usepw", "-create"]
