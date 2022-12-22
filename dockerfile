@@ -1,9 +1,14 @@
-# Nginx
+# Multiple images example
 #
-# VERSION               0.0.1
+# VERSION               0.1
 
-FROM      ubuntu
-MAINTAINER Victor Vieux <victor@docker.com>
+FROM ubuntu
+RUN echo foo > bar
+# Will output something like ===> 907ad6c2736f
 
-LABEL Description="This image is used to start the foobar executable" Vendor="ACME Products" Version="1.0"
-RUN apt-get update && apt-get install -y inotify-tools nginx apache2 openssh-server
+FROM ubuntu
+RUN echo moo > oink
+# Will output something like ===> 695d7793cbe4
+
+# You`ll now have two images, 907ad6c2736f with /bar, and 695d7793cbe4 with
+# /oink.
