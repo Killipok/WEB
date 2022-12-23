@@ -29,6 +29,7 @@ color: rgb(255, 255, 255);
   background: #ffffff;
   border-radius: 30px;
   
+  
  
   
   
@@ -62,6 +63,7 @@ color: rgb(255, 255, 255);
   left: 0;
   z-index: 1;
   
+  
 
   border-style: none;
   width: 340px;
@@ -94,6 +96,9 @@ color: rgb(255, 255, 255);
   margin: 570px auto 0 auto; 
   cursor: pointer;
   position: absolute;
+
+  
+  
   
  
 }
@@ -101,6 +106,7 @@ color: rgb(255, 255, 255);
 .buttonsteam:hover{
   background-color:#d9dce6;
   transition: 0.2s;
+  
 } 
 
 .buttontw:hover{
@@ -119,15 +125,17 @@ color: rgb(255, 255, 255);
   bottom: 0;
   left: 0;
   z-index: 1;
-  right:0.5%;
   position: absolute;
   border-radius: 400px;
   width: 150px;
   height: 150px;
-  right: 10px;
-
   position: absolute;
   margin: 110px auto; 
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;       /* The same as your div height */
+
+  
   
 
 }
@@ -138,15 +146,13 @@ p{
   bottom: 0;
   left: 0;
   z-index: 1;
-  
 
- 
- right: -245px;
   color: #000;
-  width: 340px;
-  height: 50px;
   position: absolute;
   margin: 280px auto; 
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;       /* The same as your div height */
 
 
 }
@@ -159,14 +165,11 @@ left: 0;
 z-index: 1;
 color:rgb(0, 0, 0);
 border-style: none;
-width: 340px;
-height: 50px;
+text-align: center;
+vertical-align: middle;
+line-height: 890px;       /* The same as your div height */
 
-right: -200px;
-position: absolute;
-margin: 700px auto  auto; 
-cursor: pointer;
-position: absolute;
+
 
 
 }
