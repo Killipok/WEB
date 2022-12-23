@@ -1,14 +1,20 @@
 @media screen and (min-width: 1440px) and (max-width: 1599px){     }
 
 
+
+
 html {
   height:100%
+  
 }
 
 
 body {
   background: #c9bddf8c;
-color: rgb(255, 255, 255);}
+color: rgb(255, 255, 255);
+
+}
+
 
 .rectangle {
   top: 0;
@@ -17,7 +23,7 @@ color: rgb(255, 255, 255);}
   left: 0;
   z-index: 1;
   margin: auto;
-   
+  margin-top: 4%;
   width: 450px;
   height: 720px;
   background: #ffffff;
@@ -36,16 +42,17 @@ color: rgb(255, 255, 255);}
   bottom: 0;
   left: 0;
   z-index: 1;
-  margin: auto;
-
+  
+  
   border-style: none;
   width: 340px;
   height: 50px;
   background: #3d125a75;
   border-radius: 30px;
   position: absolute;
-  margin: 270px auto 0 auto; 
+  margin: 370px auto 0 auto; 
   cursor: pointer;
+  
 }
 
 .buttonvk {
@@ -54,7 +61,7 @@ color: rgb(255, 255, 255);}
   bottom: 0;
   left: 0;
   z-index: 1;
-  margin: auto;
+  
 
   border-style: none;
   width: 340px;
@@ -62,7 +69,7 @@ color: rgb(255, 255, 255);}
   background: #3d125a75;
   border-radius: 30px;
   position: absolute;
-  margin: 370px auto 0 auto; 
+  margin: 470px auto 0 auto; 
   cursor: pointer;
 
 }
@@ -73,7 +80,7 @@ color: rgb(255, 255, 255);}
   bottom: 0;
   left: 0;
   z-index: 1;
-  margin: auto;
+  
 
  
 
@@ -84,10 +91,10 @@ color: rgb(255, 255, 255);}
   background: #3d125a75;
   border-radius: 30px;
   position: absolute;
-  margin: 470px auto 0 auto; 
+  margin: 570px auto 0 auto; 
   cursor: pointer;
   position: absolute;
-
+  
  
 }
 
@@ -112,28 +119,35 @@ color: rgb(255, 255, 255);}
   bottom: 0;
   left: 0;
   z-index: 1;
-  margin: auto;
   right:0.5%;
   position: absolute;
   border-radius: 400px;
   width: 150px;
   height: 150px;
-  margin: 40px auto ; 
+  right: 10px;
+
+  position: absolute;
+  margin: 110px auto; 
   
 
 }
 
 p{
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-z-index: 1;
-color:black;
-right:1%;
-position: absolute;
-width: 68px;
-margin: 200px auto ; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  
+
+ 
+ right: -245px;
+  color: #000;
+  width: 340px;
+  height: 50px;
+  position: absolute;
+  margin: 280px auto; 
+
 
 }
 
@@ -144,10 +158,16 @@ bottom: 0;
 left: 0;
 z-index: 1;
 color:rgb(0, 0, 0);
-right:7%;
+border-style: none;
+width: 340px;
+height: 50px;
+
+right: -200px;
 position: absolute;
-width: 68px;
-margin: 600px auto ;
+margin: 700px auto  auto; 
+cursor: pointer;
+position: absolute;
+
 
 }
 
