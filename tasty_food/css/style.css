@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e9e9e9;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    margin: 0px 166px;
+}
+
+ 
+
+.header {
+    background-image: url(/image/back.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header-line{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 25px;
+   
+}
+
+.nav-item:hover{
+    color: #ff6600;
+    transition: 0.3s linear;
+}
+
+
+.num{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.num:hover{
+    color: #ff6600;
+    transition: 0.3s linear;
+}
+
+.phone-holder{
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    background-color: #FF7400;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: 700;
+}
+
+.button:hover{
+    background-color: #8d3800;
+    transition: 0.3s linear;
+}
+
+.header-down{
+    position: relative;
+}
+
+.header-title{
+    color: #ff7b00;
+    font-family: 'Tinos', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    margin-top: 200px;
+}
+
+.logo-png{
+    position: absolute;
+    height: 100px;
+    left: 20px;
+    top: 20px;
+}
+
+.header-suptitle{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.header-suptitle::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 61px;
+    background-color: #fff;
+    top: 70px;
+    left: 50px;
+    
+
+}
+
+.header-suptitle::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 61px;
+    background-color: #fff;
+    top: 70px;
+    left: 320px;
+    
+
+}
+
+.header-button{
+    background-color: #FF7400;
+    padding: 14px 28px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.header-button:hover{
+    background-color: #8d3800;
+    transition: 0.3s linear;
+}
+
+.menu{
+    display: none;
+
+}
+
+.slide{
+    position: absolute;
+    
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.block{
+    display: block;
+}
+
+
+.disp{
+    display: none;
+
+}
+
+
+
+.recipe{
+    background-color: #ffffff;
+    width: 300px;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding: 0px 10px;
+    border-radius: 16px;
+ 
+}
+
+ 
+
+.recipe:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: 0.1s;
+}
+
+.recipe-holder{
+    display: flex;
+    justify-content: space-around;
+	margin-bottom: 10px;
+     
+}
+
+
+
+.recipe-img{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.recipe-image{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.recipe-title{
+    font-family: 'Tinos', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+   
+}
+
+.recipe-desc{
+    text-align: center;
+    font-family: 'Tinos', sans-serif;
+    font-weight: 700;
+    color: #FF7400;
+
+}
+
+
+
+
+
+.container-block{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    width: 300px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 16px;
+    margin: 10px;
+  
+
+}
+
+.img-img{
+    width: 300px;
+    height: 300px;
+  
+     
+}
+
+.item-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Tinos', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.item-time{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    font-family: 'Tinos', sans-serif;
+}
+.txt{
+    color: #ff8102;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+.item:hover{
+  
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1300px){
+    .header-title{
+        position: static;
+    }
+
+    .recipe-title{
+        position: static;
+    }
+
+  
+
+    .logo-png{
+        position: static;
+        height: 70px;
+        left: 10px;
+        top: 10px;
+    }
+
+    .button{
+        display: block;
+        
+    }
+    
+
+    .header-suptitle::after,
+    .header-suptitle::before{
+        content: none;
+
+    }
+
+    .header{
+        width: 100%;
+    }
+    
+}
+
+@media(max-width: 1185px) {
+    .menu{
+        display: block;
+        margin-right: 40px;
+         
+    }
+    
+    .nav,
+    .cart,
+    .phone,
+    .btn{
+        display: none;
+    }
+
+    .header-line{
+        justify-content: space-between;
+    }
+
+}
+
+@media(max-width: 1000px) {
+    .recipe-holder{
+         display: block;
+    }
+   
+   
+    
+}
+
+@media(max-width: 780px){
+    .container{
+        margin: auto 40px;
+    }
+    .header{
+        width: 100%;
+    }
+    
+  
+}
+
+@media (max-width: 576px)
+{
+    .container{
+        display: block;
+        justify-content: center;
+        top: 25%;
+        left: 25%;
+    }
+}
+
+@media(max-width: 400px){
+  
+
+    
+ 
+    .container{
+        margin: auto 10px;
+    }
+   
+    
+
+ 
+}
+
+
+
