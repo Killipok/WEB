@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e9e9e9;
+    
+}
+
+ 
+ 
+
+a{
+    color: #9454ddd8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p{
+    margin: 10px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #e9e9e9;
+    width: 300px;
+}
+
+.counter
+{
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  border: 1px dashed grey;
+  margin: 10px 0;
+}
+
+.counter:hover
+{
+  cursor: pointer;
+  background-color: #434047bd;
+}
+
+button{
+    background-color: #aaaaaad8;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.img_profile {
+    border-radius: 50%; 
+    border: 5px solid #fff; 
+    box-shadow: 2px 1px 5px #999999; 
+}
+
+.nav-item{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 25px;
+   
+}
+
+.nav-item:hover{
+    color: #ff6600;
+    transition: 0.3s linear;
+}
+
+.field-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .field-group input,
+  .field-group textarea {
+    margin-right: 10px;
+  }
+  
+  .field-group button {
+    margin-left: 10px;
+  }
+  
